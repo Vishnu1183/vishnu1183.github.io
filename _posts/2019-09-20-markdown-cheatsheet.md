@@ -173,21 +173,6 @@ __I like following things__
 </ul>
 ---
 
-### 2.5) Lists with check box in Markdown
-```python
-- [ ] Do's
-    - [ ] Eat
-    - [ ] Sleep
-- [x] Dont's
-    - [x] Kill
-```
-- [ ] Do's
-    - [ ] Eat
-    - [ ] Sleep
-- [x] Dont's
-    - [x] Kill
-
----
 ### 3.1) Headings in Markdown
 ```python
 # This is Heading 1.
