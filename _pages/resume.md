@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /resume/
-title: Resume
+title: "Resume"
 author_profile: true
 header:
     overlay_image: /images/header_resume.jpg
