@@ -143,22 +143,17 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-       url: "https://twitter.com/vishnu1183"
+      url: "https://twitter.com/kanishkd4"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://facebook.com/vishnu1183"
+      url: "https://www.facebook.com/kanishk.dogar"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/vishnu1183"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/kanishkd4"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-       url: "https://instagram.com/vishnu1183"
+      url: "https://instagram.com/kanishkd4"
+
 
 
 # Reading Files
