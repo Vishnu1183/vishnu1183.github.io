@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "Vishnu's Blog"
 title_separator          : "-"
 subtitle                 : "Site about Data Science"
-name                     : "Vishnu SIngh"
-description              : "An amazing website."
+name                     : "Vishnu Singh"
+description              : "Data Science Tutorials"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -84,9 +84,9 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               : vishnu1183
+  username               : "vishnu1183"
 facebook:
-  username               : vishnu1183
+  username               : "vishnu1183"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -95,7 +95,10 @@ og_image                 : # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links: 
+    - "https://twitter.com/vishnu1183" 
+    - "https://www.linkedin.com/in/vishnu1183/"
+
 
 # Analytics
 analytics:
@@ -109,13 +112,13 @@ analytics:
 author:
   name             : "Vishnu"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**Data Science Tutorials**"
+  bio              : "Data Scientist"
   location         : "Hyderabad"
-  email            :
+  email            : "vishnu.singh25@rediffmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+       url: mailto:vishnu.singh25@rediffmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -292,7 +295,7 @@ defaults:
       comments: # true
       share: true
       related: true
-
+  # _pages
   - scope:
       path: ""
       type: pages
