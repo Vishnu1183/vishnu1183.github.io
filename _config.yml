@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -110,10 +110,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Vishnu"
+  name             : "Vishnu Prakash Singh"
   avatar           : "/images/vishnu_li.jpg"
   bio              : "Data Scientist"
-  location         : "Hyderabad"
+  location         : "Hyderabad, India"
   email            : #"vishnu.singh25@rediffmail.com"
   links:
     - label: "Email"
