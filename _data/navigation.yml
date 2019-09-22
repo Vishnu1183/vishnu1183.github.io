@@ -1,9 +1,13 @@
 # main links
 main:
+  - title: "Home"
+    url: /index.html
   - title: "About"
     url: /about/
   - title: "DS tutorials"
     url: /data-science-tutorials/
+  - title: "Resume"
+    url: /Resume/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
