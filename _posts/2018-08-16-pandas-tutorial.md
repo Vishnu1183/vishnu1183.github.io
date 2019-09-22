@@ -3,6 +3,7 @@ title: "Python Tutorials part III Pandas Tutorial"
 date: 2019-09-20
 tags: [pandas, python, jupyter]
 excerpt: "This tutorial contains pandas functions used for cleaning data."
+mathjax: "true"
 ---
 
 ```python
