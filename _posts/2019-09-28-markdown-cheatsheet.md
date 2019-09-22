@@ -134,7 +134,7 @@ __I like following things__
 </ol>
 
 ---
-### 2.2) Unordered Lists in Markdown
+### 2.3) Unordered Lists in Markdown
 ```python
 __I like following things__
 * Movies
