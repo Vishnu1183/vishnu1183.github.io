@@ -160,14 +160,7 @@ __I like following things__
 <li>Coffee</li>
 </ul>
 ```
-__I like following things__
-<ul>
-<li>Movies
-<ul>
-<li>More Movies</li>
-<li>TV Series</li>
-</ul>
-<li>Coffee</li>  </ul>
+Not printing unordered list using HTML as it is giving error in kramdown.
 
 ---
 ### 2.5) Lists with check box in Markdown
