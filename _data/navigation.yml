@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "DS tutorials"
-    url: /Markdown_Cheatsheet/
+    url: /data-science-tutorials/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
