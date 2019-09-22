@@ -161,7 +161,6 @@ __I like following things__
 <li>Coffee</li>
 </ul>
 ```
----
 __I like following things__
 <ul>
 <li>Movies
