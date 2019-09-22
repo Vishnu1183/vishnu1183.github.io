@@ -1,4 +1,10 @@
-
+---
+title: "Python Tutorials part II- Numpy Tutorial"
+date: 2019-09-20
+tags: [markdown, python, md, jupyter]
+excerpt: "jupyter notebook markdown, python"
+mathjax: "true"
+---
 
 ```python
 from IPython.display import Image;from datetime import date

@@ -2,7 +2,9 @@
 title: "About"
 permalink: /about/
 header:
-  image: "/images/ds_image.jpeg"
+    overlay_image: /images/header_about.jpg
+    caption: "Photo by [Saurav Anuraj](http://www.meowstudio.in/)"
+classes: wide
 ---
 
-I am GROOOOOOOOOOOOOOOOOOOOOOOOOOOT.
+# *I am GROOOOOOOOOOOOOOOOOOOOOOOOOOOT.*
