@@ -167,8 +167,7 @@ __I like following things__
 <li>More Movies</li>
 <li>TV Series</li>
 </ul>
-<li>Coffee</li>
-</ul>
+<li>Coffee</li>  </ul>
 
 ---
 ### 2.5) Lists with check box in Markdown
