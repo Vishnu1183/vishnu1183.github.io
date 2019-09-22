@@ -2,7 +2,7 @@
 title: "Python Tutorials part III Pandas Tutorial"
 date: 2019-09-20
 tags: [markdown, python, md, jupyter]
-excerpt: "jupyter notebook markdown, python"
+excerpt: "This tutorial contains pandas functions used for cleaning data."
 ---
 
 ```python

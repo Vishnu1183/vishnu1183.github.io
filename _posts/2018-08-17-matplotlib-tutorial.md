@@ -2,7 +2,7 @@
 title: "Python Tutorials part IV- Matplotlib Tutorial"
 date: 2019-09-20
 tags: [markdown, python, md, jupyter]
-excerpt: "jupyter notebook markdown, python"
+excerpt: "This tutorial contains matplotlib functions for data visualisation."
 mathjax: "true"
 ---
 
