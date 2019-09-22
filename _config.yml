@@ -114,11 +114,11 @@ author:
   avatar           : "/images/vishnu_li.jpg"
   bio              : "Data Scientist"
   location         : "Hyderabad"
-  email            : "vishnu.singh25@rediffmail.com"
+  email            : #"vishnu.singh25@rediffmail.com"
   links:
-    #- label: "Email"
-     # icon: "fas fa-fw fa-envelope-square"
-      #url: mailto:vishnu.singh25@rediffmail.com
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:vishnu.singh25@rediffmail.com
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   # url: "https://your-website.com"
