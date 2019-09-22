@@ -1,9 +1,0 @@
----
-layout: home
-author_profile: true
-title: "Data Science Tutorials"
-header:
-    overlay_image: /images/header_home.jpg
-    caption: "Photo by [Saurav Anuraj](http://www.meowstudio.in/)"
-classes: wide
----
