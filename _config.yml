@@ -116,11 +116,11 @@ author:
   location         : "Hyderabad"
   email            : "vishnu.singh25@rediffmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-       url: mailto:vishnu.singh25@rediffmail.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+    #- label: "Email"
+     # icon: "fas fa-fw fa-envelope-square"
+      # url: mailto:vishnu.singh25@rediffmail.com
+   # - label: "Website"
+    #  icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
