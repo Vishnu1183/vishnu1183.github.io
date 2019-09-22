@@ -149,29 +149,6 @@ __I like following things__
 * Coffee
 
 ---
-### 2.4) Unordered Lists in Markdown using HTML syntax
-```python
-__I like following things__
-<ul>
-<li>Movies
-<ul>
-<li>More Movies</li>
-<li>TV Series</li>
-</ul>
-<li>Coffee</li>
-</ul>
-```
-__I like following things__
-<ul>
-<li>Movies
-<ul>
-<li>More Movies</li>
-<li>TV Series</li>
-</ul>
-<li>Coffee</li>
-</ul>
-
----
 ### 3.1) Headings in Markdown
 ```python
 # This is Heading 1.
