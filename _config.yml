@@ -118,41 +118,41 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:kanishkd4@gmail.com
+      url: mailto:vishnu.singh25@rediffmail.com
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
     #   # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/kanishkd4"
+      url: "https://twitter.com/vishnu1183"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/kanishkd4"
+      url: "https://github.com/vishnu1183"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/kanishkdogar/"
+      url: "https://www.linkedin.com/in/vishnu1183/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/kanishk.dogar"
+      url: "https://www.facebook.com/vishnu1183"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/kanishkd4"
+      url: "https://instagram.com/vishnu1183"
 
 # Site Footer
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/kanishkd4"
+      url: "https://twitter.com/vishnu1183"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://www.facebook.com/kanishk.dogar"
+      url: "https://www.facebook.com/vishnu1183"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/kanishkd4"
+      url: "https://github.com/vishnu1183"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/kanishkd4"
+      url: "https://instagram.com/vishnu1183"
 
 
 
