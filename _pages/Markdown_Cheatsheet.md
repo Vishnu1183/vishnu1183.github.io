@@ -1,5 +1,5 @@
 ---
-layput: posts
+layout: posts
 permalink: /data-science-tutorials/
 title: "DS tutorials"
 author_profiile: true
