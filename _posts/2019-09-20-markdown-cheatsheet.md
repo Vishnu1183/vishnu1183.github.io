@@ -171,8 +171,8 @@ __I like following things__
 </ul>
 <li>Coffee</li>
 </ul>
-
 ---
+
 ### 2.5) Lists with check box in Markdown
 ```python
 - [ ] Do's
