@@ -2,8 +2,8 @@
 title: "Basic Markdown Syntax"
 date: 2019-09-28
 tags: [markdown, python, md, jupyter]
-#header:
-#  image: "/images/"
+header:
+  image: "/images/ds_image1.jpeg"
 excerpt: "jupyter notebook markdown, python"
 mathjax: "true"
 ---
