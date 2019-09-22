@@ -1,7 +1,7 @@
 ---
 title: "Basic Markdown Syntax"
 date: 2019-09-20
-tags: [markdown, python, md, jupyter]
+tags: [markdown, python, jupyter]
 excerpt: "This tutorial contains basic markdown syntax using jupyter notebook."
 mathjax: "true"
 ---

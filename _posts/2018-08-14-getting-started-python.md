@@ -1,7 +1,7 @@
 ---
 title: "Python Tutorials part I Getting Started"
 date: 2019-09-20
-tags: [markdown, python, md, jupyter]
+tags: [anaconda, python, jupyter]
 excerpt: "This tutorial helps in setting up python & jupyter in machine"
 mathjax: "true"
 ---

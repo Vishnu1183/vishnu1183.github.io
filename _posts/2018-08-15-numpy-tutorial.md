@@ -2,7 +2,7 @@
 layout: post
 title: "Python Tutorials part II- Numpy Tutorial"
 date: 2019-09-20
-tags: [markdown, python, md, jupyter]
+tags: [numpy, python, jupyter]
 excerpt: "This tutorial contains basic numpy functions used for data analysis."
 ---
 
