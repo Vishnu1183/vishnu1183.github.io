@@ -171,7 +171,6 @@ __I like following things__
 </ul>
 <li>Coffee</li>
 </ul>
----
 
 ### 3.1) Headings in Markdown
 ```python
