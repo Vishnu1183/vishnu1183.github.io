@@ -1,6 +1,6 @@
 ---
 title: "Basic Markdown Syntax"
-date: 2019-09-28
+date: 2019-09-20
 tags: [markdown, python, md, jupyter]
 header:
   image: "/images/ds_image1.jpeg"
