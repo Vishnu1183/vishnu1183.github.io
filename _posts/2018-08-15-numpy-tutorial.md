@@ -16,7 +16,7 @@ InteractiveShell.ast_node_interactivity = "all"
 <h6>01 Oct,2019</h6>
 <h6>By: Vishnu Prakash Singh</h6>
 
-### Numpy Array
+## Numpy Array
 
 * NumPy, which stands for Numerical Python
 * Consists of multidimensional array objects
@@ -40,21 +40,14 @@ print('Shape of array is ' + str(np.shape(arr1d)))
 print('Size of array is ' + str(np.size(arr1d)))
 ```
 
-
-
-
-    array([1, 9, 8, 3])
-
-
-
-    Class of array is <class 'numpy.ndarray'>
-    Type of array is int32
-    Shape of array is (4,)
-    Size of array is 4
+array([1, 9, 8, 3])<br>
+Class of array is <class 'numpy.ndarray'><br>
+Type of array is int32<br>
+Shape of array is (4,)<br>
+Size of array is 4
     
 
-##### Arithmetic Operations on Numpy Array
-
+### Arithmetic Operations on Numpy Array
 
 ```python
 # list1 + 5 #gives an error
@@ -62,16 +55,9 @@ print('Size of array is ' + str(np.size(arr1d)))
 # Add 5 to each element of arr1d
 arr1d + 5
 ```
+array([ 6, 14, 13,  8])
 
-
-
-
-    array([ 6, 14, 13,  8])
-
-
-
-##### Creating a 2d array from a list of lists
-
+### Creating a 2d array from a list of lists
 
 ```python
 list2 = [[1,2,3],[4,5,6]]
@@ -82,16 +68,12 @@ print('Shape of array is ' + str(np.shape(arr2d)))
 print('Size of array is ' + str(np.size(arr2d)))
 ```
 
-    Class of array is <class 'numpy.ndarray'>
-    Type of array is int32
-    Shape of array is (2, 3)
-    Size of array is 6
+Class of array is <class 'numpy.ndarray'><br>
+Type of array is int32<br>
+Shape of array is (2, 3)<br>
+Size of array is 6
     
-
-[source](https://docs.scipy.org/doc/numpy/user/quickstart.html)
-
-##### Creating numpy arrays
-
+### Creating numpy arrays   [source](https://docs.scipy.org/doc/numpy/user/quickstart.html)
 
 ```python
 # Create an array of zeros
@@ -101,31 +83,14 @@ np.ones((2,3))
 # Create an array of random values
 np.empty( (2,2))
 ```
+array([[0., 0., 0.],<br>
+       [0., 0., 0.]])
 
+array([[1., 1., 1.],<br>
+       [1., 1., 1.]])
 
-
-
-    array([[0., 0., 0.],
-           [0., 0., 0.]])
-
-
-
-
-
-
-    array([[1., 1., 1.],
-           [1., 1., 1.]])
-
-
-
-
-
-
-    array([[1.14383058e-311, 1.94861032e-153],
-           [4.23894309e+175, 1.96545743e-152]])
-
-
-
+array([[1.14383058e-311, 1.94861032e-153],<br>
+       [4.23894309e+175, 1.96545743e-152]])
 
 ```python
 # Returns 9 values evenly spaced over {0,2}
@@ -135,30 +100,13 @@ np.arange( 10, 31, 5 )
 # Returns values with start = 0 & step size=5, endpoint is excluded
 np.arange( 12 )
 ```
+array([0.  , 0.25, 0.5 , 0.75, 1.  , 1.25, 1.5 , 1.75, 2.  ])
 
+array([10, 15, 20, 25, 30])
 
+array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
 
-
-    array([0.  , 0.25, 0.5 , 0.75, 1.  , 1.25, 1.5 , 1.75, 2.  ])
-
-
-
-
-
-
-    array([10, 15, 20, 25, 30])
-
-
-
-
-
-
-    array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
-
-
-
-##### Reshaping an Array
-
+### Reshaping an Array
 
 ```python
 # changes the shape of the array 
@@ -170,53 +118,24 @@ b = a.ravel()
 b
 b.shape
 ```
+array([[ 0,  1,  2,  3,  4,  5],<br/>
+       [ 6,  7,  8,  9, 10, 11]])
 
+(2, 6)
 
+array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
 
+(12,)
 
-    array([[ 0,  1,  2,  3,  4,  5],
-           [ 6,  7,  8,  9, 10, 11]])
-
-
-
-
-
-
-    (2, 6)
-
-
-
-
-
-
-    array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])
-
-
-
-
-
-
-    (12,)
-
-
-
-##### Basic Operations on numpy array
-
+### Basic Operations on numpy array
 
 ```python
 np.random.seed(1183)
 arr = np.random.randint(low = 1,high = 10,size = (2,3))
 arr
 ```
-
-
-
-
-    array([[7, 8, 6],
-           [4, 5, 2]])
-
-
-
+array([[7, 8, 6],
+    [4, 5, 2]])
 
 ```python
 # squaring numpy array
@@ -226,31 +145,14 @@ arr**2
 # calculating logical expression
 arr<4
 ```
+array([[49, 64, 36],<br/>
+       [16, 25,  4]], dtype=int32)
 
+array([[ 6.56986599,  9.89358247, -2.79415498],<br/>
+       [-7.56802495, -9.58924275,  9.09297427]])
 
-
-
-    array([[49, 64, 36],
-           [16, 25,  4]], dtype=int32)
-
-
-
-
-
-
-    array([[ 6.56986599,  9.89358247, -2.79415498],
-           [-7.56802495, -9.58924275,  9.09297427]])
-
-
-
-
-
-
-    array([[False, False, False],
-           [False, False,  True]])
-
-
-
+array([[False, False, False],<br/>
+       [False, False,  True]])
 
 ```python
 # calculating exponential of array
@@ -258,23 +160,11 @@ np.exp(arr)
 # calculating square root of array
 np.sqrt(arr)
 ```
+array([[1096.63315843, 2980.95798704,  403.42879349],<br>
+       [  54.59815003,  148.4131591 ,    7.3890561 ]])
 
-
-
-
-    array([[1096.63315843, 2980.95798704,  403.42879349],
-           [  54.59815003,  148.4131591 ,    7.3890561 ]])
-
-
-
-
-
-
-    array([[2.64575131, 2.82842712, 2.44948974],
-           [2.        , 2.23606798, 1.41421356]])
-
-
-
+array([[2.64575131, 2.82842712, 2.44948974],<br>
+       [2.        , 2.23606798, 1.41421356]])
 
 ```python
 # sum of each element of array
@@ -284,34 +174,15 @@ arr.min()
 # cumulative sum of array
 arr.cumsum()                
 ```
+array([[ 7, 11,  4, 16],
+       [ 6, 10, 19,  1],
+       [19, 13,  1, 16]])
 
+32
 
+2
 
-
-    array([[ 7, 11,  4, 16],
-           [ 6, 10, 19,  1],
-           [19, 13,  1, 16]])
-
-
-
-
-
-
-    32
-
-
-
-
-
-
-    2
-
-
-
-
-
-
-    array([ 7, 15, 21, 25, 30, 32], dtype=int32)
+array([ 7, 15, 21, 25, 30, 32], dtype=int32)
 
 
 
@@ -324,31 +195,16 @@ arr.min(axis=1)
 # cumulative sum along each row
 arr.cumsum(axis=1)                  
 ```
+array([11, 13,  8])
+
+array([6, 2])
+
+array([[ 7, 15, 21],<br>
+       [ 4,  9, 11]], dtype=int32)
 
 
 
-
-    array([11, 13,  8])
-
-
-
-
-
-
-    array([6, 2])
-
-
-
-
-
-
-    array([[ 7, 15, 21],
-           [ 4,  9, 11]], dtype=int32)
-
-
-
-##### Basic Mathematical Operation on 1D array
-
+### Basic Mathematical Operation on 1D array
 
 ```python
 a = np.array( [20,30,40,50] )
@@ -356,13 +212,7 @@ b = np.arange( 1, 5 )
 b
 ```
 
-
-
-
-    array([1, 2, 3, 4])
-
-
-
+array([1, 2, 3, 4])
 
 ```python
 #Addition of 2 arrays
@@ -375,33 +225,13 @@ a*b        # np.multiply(a,b)
 a/b         # np.divide(a,b)
 ```
 
+array([21, 32, 43, 54])
 
+array([19, 28, 37, 46])
 
+array([ 20,  60, 120, 200])
 
-    array([21, 32, 43, 54])
-
-
-
-
-
-
-    array([19, 28, 37, 46])
-
-
-
-
-
-
-    array([ 20,  60, 120, 200])
-
-
-
-
-
-
-    array([20.        , 15.        , 13.33333333, 12.5       ])
-
-
+array([20.        , 15.        , 13.33333333, 12.5       ])
 
 
 ```python
@@ -415,36 +245,18 @@ c.max()
 c.T
 ```
 
+25
+
+4
+
+8
+
+array([[7, 6],<br>
+       [8, 4]])
 
 
 
-    25
-
-
-
-
-
-
-    4
-
-
-
-
-
-
-    8
-
-
-
-
-
-
-    array([[7, 6],
-           [8, 4]])
-
-
-
-##### Basic Operations on numpy nD array
+### Basic Operations on numpy nD array
 
 
 ```python
@@ -455,20 +267,11 @@ c
 d = np.random.randint(low = 1,high = 10,size = (2,2))
 d
 ```
+array([[7, 8],<br>
+       [6, 4]])
 
-
-
-
-    array([[7, 8],
-           [6, 4]])
-
-
-
-
-
-
-    array([[5, 2],
-           [7, 1]])
+array([[5, 2],<br>
+       [7, 1]])
 
 
 
@@ -479,20 +282,11 @@ c+d
 #Subtraction of 2 nD arrays
 c-d
 ```
+array([[12, 10],<br>
+       [13,  5]])
 
-
-
-
-    array([[12, 10],
-           [13,  5]])
-
-
-
-
-
-
-    array([[ 2,  6],
-           [-1,  3]])
+array([[ 2,  6],<br>
+       [-1,  3]])
 
 
 
@@ -505,32 +299,18 @@ c @ d
 # another matrix product
 c.dot(d)                    
 ```
+array([[35, 16],<br>
+       [42,  4]])
+
+array([[91, 22],<br>
+       [58, 16]])
+
+array([[91, 22],<br>
+       [58, 16]])
 
 
 
-
-    array([[35, 16],
-           [42,  4]])
-
-
-
-
-
-
-    array([[91, 22],
-           [58, 16]])
-
-
-
-
-
-
-    array([[91, 22],
-           [58, 16]])
-
-
-
-##### Indexing and Slicing
+### Indexing and Slicing
 
 
 ```python
@@ -542,27 +322,11 @@ e[2]
 #prints value present at index 3 to (6-1)
 e[3:6]
 ```
+array([5, 1, 2, 1, 2, 9, 1, 9, 7, 5])
 
+2
 
-
-
-    array([5, 1, 2, 1, 2, 9, 1, 9, 7, 5])
-
-
-
-
-
-
-    2
-
-
-
-
-
-
-    array([1, 2, 9])
-
-
+array([1, 2, 9])
 
 
 ```python
@@ -574,17 +338,9 @@ e[0:8:2] = -99   # -99 can be replaced with any array of length e[0:8:2]
 e
 ```
 
+array([  5,   1,   2,   1,   2,   9,   1,   9,   7, -25])
 
-
-
-    array([  5,   1,   2,   1,   2,   9,   1,   9,   7, -25])
-
-
-
-
-
-
-    array([-99,   1, -99,   1, -99,   9, -99,   9,   7, -25])
+array([-99,   1, -99,   1, -99,   9, -99,   9,   7, -25])
 
 
 
@@ -593,13 +349,7 @@ e
 # Reversing an array
 e[ : :-1]
 ```
-
-
-
-
-    array([-25,   7,   9, -99,   9, -99,   1, -99,   1, -99])
-
-
+array([-25,   7,   9, -99,   9, -99,   1, -99,   1, -99])
 
 
 ```python
@@ -612,11 +362,8 @@ f = np.fromfunction(f,(2,4),dtype=int)
 f
 ```
 
-
-
-
-    array([[ 0,  4,  8, 12],
-           [ 5,  9, 13, 17]])
+array([[ 0,  4,  8, 12],<br>
+       [ 5,  9, 13, 17]])
 
 
 
@@ -630,22 +377,11 @@ h = np.ceil(10*np.random.random((2,2)))
 h
 ```
 
+array([[5., 2.],<br>
+       [5., 5.]])
 
-
-
-    array([[5., 2.],
-           [5., 5.]])
-
-
-
-
-
-
-    array([[4., 8.],
-           [9., 2.]])
-
-
-
+array([[4., 8.],<br>
+       [9., 2.]])
 
 ```python
 #Vertical Stacking
@@ -657,32 +393,16 @@ np.column_stack((g,h))
 # column and horizontal stacking of 1D array gives same result
 ```
 
+array([[5., 2.],<br>
+       [5., 5.],<br>
+       [4., 8.],<br>
+       [9., 2.]])
 
+array([[5., 2., 4., 8.],<br>
+       [5., 5., 9., 2.]])
 
-
-    array([[5., 2.],
-           [5., 5.],
-           [4., 8.],
-           [9., 2.]])
-
-
-
-
-
-
-    array([[5., 2., 4., 8.],
-           [5., 5., 9., 2.]])
-
-
-
-
-
-
-    array([[5., 2., 4., 8.],
-           [5., 5., 9., 2.]])
-
-
-
+array([[5., 2., 4., 8.],<br>
+       [5., 5., 9., 2.]])
 
 ```python
 i = np.array([4.,2.])
@@ -691,22 +411,10 @@ np.column_stack((i,j))
 np.hstack((i,j))
 # column and horizontal stacking of 1D array gives different result
 ```
+array([[4., 3.],<br>
+       [2., 8.]])
 
-
-
-
-    array([[4., 3.],
-           [2., 8.]])
-
-
-
-
-
-
-    array([4., 2., 3., 8.])
-
-
-
+array([4., 2., 3., 8.])
 
 ```python
 from numpy import newaxis  # increases array dimension by 1
@@ -716,34 +424,15 @@ g[newaxis,:]
 g[newaxis,:].shape
 ```
 
+array([[[5., 2.]],<br>
+    [[5., 5.]]])
 
+(2, 1, 2)
 
+array([[[5., 2.],<br>
+       [5., 5.]]])
 
-    array([[[5., 2.]],
-    
-           [[5., 5.]]])
-
-
-
-
-
-
-    (2, 1, 2)
-
-
-
-
-
-
-    array([[[5., 2.],
-            [5., 5.]]])
-
-
-
-
-
-
-    (1, 2, 2)
+(1, 2, 2)
 
 
 
@@ -1381,32 +1070,6 @@ np.linspace(0,2,9)
 
     array([0.  , 0.25, 0.5 , 0.75, 1.  , 1.25, 1.5 , 1.75, 2.  ])
 
-
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
 
 <h3><center>Common Numpy Functions</center></h3>
     
