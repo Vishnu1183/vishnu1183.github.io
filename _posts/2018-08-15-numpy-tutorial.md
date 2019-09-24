@@ -51,7 +51,6 @@ Size of array is 4
 
 ```python
 # list1 + 5 #gives an error
-
 # Add 5 to each element of arr1d
 arr1d + 5
 ```
@@ -185,8 +184,6 @@ array([[ 7, 11,  4, 16],
 array([ 7, 15, 21, 25, 30, 32], dtype=int32)
 
 
-
-
 ```python
 # sum of each column
 arr.sum(axis=0)
@@ -202,8 +199,6 @@ array([6, 2])
 array([[ 7, 15, 21],<br>
        [ 4,  9, 11]], dtype=int32)
 
-
-
 ### Basic Mathematical Operation on 1D array
 
 ```python
@@ -211,7 +206,6 @@ a = np.array( [20,30,40,50] )
 b = np.arange( 1, 5 )
 b
 ```
-
 array([1, 2, 3, 4])
 
 ```python
@@ -254,8 +248,6 @@ c.T
 array([[7, 6],<br>
        [8, 4]])
 
-
-
 ### Basic Operations on numpy nD array
 
 
@@ -273,9 +265,6 @@ array([[7, 8],<br>
 array([[5, 2],<br>
        [7, 1]])
 
-
-
-
 ```python
 #Addition of 2 nD arrays
 c+d
@@ -287,9 +276,6 @@ array([[12, 10],<br>
 
 array([[ 2,  6],<br>
        [-1,  3]])
-
-
-
 
 ```python
 # elementwise product
@@ -307,8 +293,6 @@ array([[91, 22],<br>
 
 array([[91, 22],<br>
        [58, 16]])
-
-
 
 ### Indexing and Slicing
 
@@ -342,9 +326,6 @@ array([  5,   1,   2,   1,   2,   9,   1,   9,   7, -25])
 
 array([-99,   1, -99,   1, -99,   9, -99,   9,   7, -25])
 
-
-
-
 ```python
 # Reversing an array
 e[ : :-1]
@@ -361,14 +342,10 @@ def f(x,y):
 f = np.fromfunction(f,(2,4),dtype=int)
 f
 ```
-
 array([[ 0,  4,  8, 12],<br>
        [ 5,  9, 13, 17]])
 
-
-
 ##### Stacking of Arrays
-
 
 ```python
 g = np.floor(10*np.random.random((2,2)))
@@ -434,34 +411,19 @@ array([[[5., 2.],<br>
 
 (1, 2, 2)
 
-
-
-
 ```python
 # using newaxis function, both coumn and horizontal stacking
 np.column_stack((a[:,newaxis],b[:,newaxis]))
 np.hstack((a[:,newaxis],b[:,newaxis]))   # the result is the same
 ```
 
+array([[4., 3.],<br>
+       [2., 8.]])
 
+array([[4., 3.],<br>
+       [2., 8.]])
 
-
-    array([[4., 3.],
-           [2., 8.]])
-
-
-
-
-
-
-    array([[4., 3.],
-           [2., 8.]])
-
-
-
-##### Splitting an array
-
-
+### Splitting an array
 ```python
 k = np.floor(10*np.random.random((2,12)))
 k
@@ -469,45 +431,22 @@ np.hsplit(k,3)   # Split a into 3
 type(np.hsplit(k,3))
 np.hsplit(k,(3,4))   # Split a after the third and the fourth column
 ```
-
-
-
-
-    array([[0., 8., 4., 4., 5., 6., 5., 0., 9., 3., 3., 4.],
+array([[0., 8., 4., 4., 5., 6., 5., 0., 9., 3., 3., 4.],<br>
            [0., 0., 2., 2., 0., 4., 5., 7., 8., 1., 4., 9.]])
 
+[array([[0., 8., 4., 4.],<br>
+       [0., 0., 2., 2.]]), array([[5., 6., 5., 0.],<br>
+       [0., 4., 5., 7.]]), array([[9., 3., 3., 4.],<br>
+       [8., 1., 4., 9.]])]
 
+list
 
+[array([[0., 8., 4.],
+       [0., 0., 2.]]), array([[4.],
+       [2.]]), array([[5., 6., 5., 0., 9., 3., 3., 4.],
+       [0., 4., 5., 7., 8., 1., 4., 9.]])]
 
-
-
-    [array([[0., 8., 4., 4.],
-            [0., 0., 2., 2.]]), array([[5., 6., 5., 0.],
-            [0., 4., 5., 7.]]), array([[9., 3., 3., 4.],
-            [8., 1., 4., 9.]])]
-
-
-
-
-
-
-    list
-
-
-
-
-
-
-    [array([[0., 8., 4.],
-            [0., 0., 2.]]), array([[4.],
-            [2.]]), array([[5., 6., 5., 0., 9., 3., 3., 4.],
-            [0., 4., 5., 7., 8., 1., 4., 9.]])]
-
-
-
-##### Deep Copy
-
-
+### Deep Copy
 ```python
 l = k.copy()         # no new object is created
 k is l          # a and b are two names for the same ndarray object
@@ -516,30 +455,13 @@ l.shape
 k.shape           # if one gets changed, other gets changed too
 ```
 
+False
 
+(3, 8)
 
+(2, 12)
 
-    False
-
-
-
-
-
-
-    (3, 8)
-
-
-
-
-
-
-    (2, 12)
-
-
-
-##### Shallow copy
-
-
+### Shallow copy
 ```python
 l = k          # no new object is created
 k is l          # a and b are two names for the same ndarray object
@@ -548,30 +470,13 @@ l.shape
 k.shape           # if one gets changed, other gets changed too
 ```
 
+True
 
+(3, 8)
 
+(3, 8)
 
-    True
-
-
-
-
-
-
-    (3, 8)
-
-
-
-
-
-
-    (3, 8)
-
-
-
-##### Indexing with Arrays of Indices
-
-
+### Indexing with Arrays of Indices
 ```python
 m = np.arange(1,13)**2                       # the first 12 square numbers
 m
@@ -581,30 +486,13 @@ m[mi]                                       # the elements of a at the positions
 mj = np.array( [ [ 3, 4], [ 9, 7 ] ] )      # a bidimensional array of indices
 m[mj]                                       # the same shape as j
 ```
+array([  1,   4,   9,  16,  25,  36,  49,  64,  81, 100, 121, 144],
+       dtype=int32)
 
+array([ 4,  4, 16, 81, 36], dtype=int32)
 
-
-
-    array([  1,   4,   9,  16,  25,  36,  49,  64,  81, 100, 121, 144],
-          dtype=int32)
-
-
-
-
-
-
-    array([ 4,  4, 16, 81, 36], dtype=int32)
-
-
-
-
-
-
-    array([[ 16,  25],
+array([[ 16,  25],
            [100,  64]], dtype=int32)
-
-
-
 
 ```python
 a = np.arange(12).reshape(3,4)
@@ -620,63 +508,24 @@ a[:,j]
 a[:,2]
 a[i]
 ```
+array([[ 0,  1,  2,  3],<br>
+       [ 4,  5,  6,  7],<br>
+       [ 8,  9, 10, 11]])
 
+array([[ 2,  5],<br>
+       [ 7, 11]])
 
+array([[ 2,  6],<br>
+       [ 6, 10]])
 
+array([[[ 2,  1],[ 3,  3]],<br>
+       [[ 6,  5],[ 7,  7]],<br>
+       [[10,  9],[11, 11]]])
 
-    array([[ 0,  1,  2,  3],
-           [ 4,  5,  6,  7],
-           [ 8,  9, 10, 11]])
+array([ 2,  6, 10])
 
-
-
-
-
-
-    array([[ 2,  5],
-           [ 7, 11]])
-
-
-
-
-
-
-    array([[ 2,  6],
-           [ 6, 10]])
-
-
-
-
-
-
-    array([[[ 2,  1],
-            [ 3,  3]],
-    
-           [[ 6,  5],
-            [ 7,  7]],
-    
-           [[10,  9],
-            [11, 11]]])
-
-
-
-
-
-
-    array([ 2,  6, 10])
-
-
-
-
-
-
-    array([[[ 0,  1,  2,  3],
-            [ 4,  5,  6,  7]],
-    
-           [[ 4,  5,  6,  7],
-            [ 8,  9, 10, 11]]])
-
-
+array([[[ 0,  1,  2,  3],[ 4,  5,  6,  7]],<br>
+    [[ 4,  5,  6,  7],[ 8,  9, 10, 11]]])
 
 
 ```python
@@ -699,62 +548,27 @@ data_max
 np.all(data_max == data.max(axis=0))
 
 ```
+array([ 20.  ,  51.25,  82.5 , 113.75, 145.  ])
 
+array([[ 0.        ,  0.84147098,  0.90929743,  0.14112001],<br>
+       [-0.7568025 , -0.95892427, -0.2794155 ,  0.6569866 ],<br>
+       [ 0.98935825,  0.41211849, -0.54402111, -0.99999021],<br>
+       [-0.53657292,  0.42016704,  0.99060736,  0.65028784],<br>
+       [-0.28790332, -0.96139749, -0.75098725,  0.14987721]])
 
+array([2, 0, 3, 1], dtype=int64)
 
+array([ 82.5 ,  20.  , 113.75,  51.25])
 
-    array([ 20.  ,  51.25,  82.5 , 113.75, 145.  ])
+array([0.98935825, 0.84147098, 0.99060736, 0.6569866 ])
 
-
-
-
-
-
-    array([[ 0.        ,  0.84147098,  0.90929743,  0.14112001],
-           [-0.7568025 , -0.95892427, -0.2794155 ,  0.6569866 ],
-           [ 0.98935825,  0.41211849, -0.54402111, -0.99999021],
-           [-0.53657292,  0.42016704,  0.99060736,  0.65028784],
-           [-0.28790332, -0.96139749, -0.75098725,  0.14987721]])
-
-
-
-
-
-
-    array([2, 0, 3, 1], dtype=int64)
-
-
-
-
-
-
-    array([ 82.5 ,  20.  , 113.75,  51.25])
-
-
-
-
-
-
-    array([0.98935825, 0.84147098, 0.99060736, 0.6569866 ])
-
-
-
-
-
-
-    True
-
-
-
+True
 
 ```python
 a = np.arange(12).reshape(3,4)
 b = a > 4
 b                                          # b is a boolean with a's shape
 a[b]
-
-
-
 ```
 
 
@@ -764,20 +578,12 @@ b1 = np.array([False,True,True])             # first dim selection
 b2 = np.array([True,False,True,False])       # second dim selection
 
 a[b1,:]                                   # selecting rows
-array([[ 4,  5,  6,  7],
-       [ 8,  9, 10, 11]])
 
 a[b1]                                     # same thing
-array([[ 4,  5,  6,  7],
-       [ 8,  9, 10, 11]])
 
 a[:,b2]                                   # selecting columns
-array([[ 0,  2],
-       [ 4,  6],
-       [ 8, 10]])
 
-a[b1,b2]                                  # a weird thing to do
-array([ 4, 10])
+a[b1,b2]                                  # selecting rows & columns
 ```
 
 
@@ -797,78 +603,38 @@ result[3,2,4]
 
 a[3]+b[2]*c[4]
 ```
+ array([[[2]],<br>
+       [[3]],<br>
+       [[4]],<br>
+       [[5]]])
 
+array([[[8],
+       [5],
+       [4]]])
 
+array([[[5, 4, 6, 8, 3]]])
 
+((4, 1, 1), (1, 3, 1), (1, 1, 5))
 
-    array([[[2]],
+array([[[42, 34, 50, 66, 26],<br>
+       [27, 22, 32, 42, 17],<br>
+       [22, 18, 26, 34, 14]],<br>
     
-           [[3]],
+       [[43, 35, 51, 67, 27],<br>
+       [28, 23, 33, 43, 18],<br>
+       [23, 19, 27, 35, 15]],<br>
     
-           [[4]],
+       [[44, 36, 52, 68, 28],<br>
+       [29, 24, 34, 44, 19],<br>
+       [24, 20, 28, 36, 16]],<br>
     
-           [[5]]])
+       [[45, 37, 53, 69, 29],<br>
+       [30, 25, 35, 45, 20],<br>
+       [25, 21, 29, 37, 17]]])
 
+17
 
-
-
-
-
-    array([[[8],
-            [5],
-            [4]]])
-
-
-
-
-
-
-    array([[[5, 4, 6, 8, 3]]])
-
-
-
-
-
-
-    ((4, 1, 1), (1, 3, 1), (1, 1, 5))
-
-
-
-
-
-
-    array([[[42, 34, 50, 66, 26],
-            [27, 22, 32, 42, 17],
-            [22, 18, 26, 34, 14]],
-    
-           [[43, 35, 51, 67, 27],
-            [28, 23, 33, 43, 18],
-            [23, 19, 27, 35, 15]],
-    
-           [[44, 36, 52, 68, 28],
-            [29, 24, 34, 44, 19],
-            [24, 20, 28, 36, 16]],
-    
-           [[45, 37, 53, 69, 29],
-            [30, 25, 35, 45, 20],
-            [25, 21, 29, 37, 17]]])
-
-
-
-
-
-
-    17
-
-
-
-
-
-
-    17
-
-
-
+17
 
 ```python
 import numpy as np
@@ -887,47 +653,21 @@ np.linalg.solve(a, y)
 np.linalg.eig(j)
 
 ```
+array([[-2. ,  1. ],
+       [ 1.5, -0.5]])
 
-
-
-
-    array([[-2. ,  1. ],
-           [ 1.5, -0.5]])
-
-
-
-
-
-
-    array([[1., 0.],
+array([[1., 0.],
            [0., 1.]])
 
+2.0
 
-
-
-
-
-    2.0
-
-
-
-
-
-
-    array([[-3.],
+array([[-3.],
            [ 4.]])
 
+(array([0.69722436, 4.30277564]), array([[-0.60889368, -0.3983218 ],[ 0.79325185, -0.91724574]]))
 
 
-
-
-
-    (array([0.69722436, 4.30277564]), array([[-0.60889368, -0.3983218 ],
-            [ 0.79325185, -0.91724574]]))
-
-
-
-##### [structured-arrays](https://docs.scipy.org/doc/numpy/user/basics.rec.html#structured-arrays)
+### [structured-arrays](https://docs.scipy.org/doc/numpy/user/basics.rec.html#structured-arrays)
 
 
 ```python
@@ -943,50 +683,19 @@ x['age']
 x['age'] = 5
 x
 ```
-
-
-
-
-    array([('Rex', 9, 81.), ('Fido', 3, 27.)],
+array([('Rex', 9, 81.), ('Fido', 3, 27.)],
           dtype=[('name', '<U10'), ('age', '<i4'), ('weight', '<f4')])
 
+('Fido', 3, 27.)
+
+array([9, 3])
+
+array([('Rex', 5, 81.), ('Fido', 5, 27.)],
+       dtype=[('name', '<U10'), ('age', '<i4'), ('weight', '<f4')])
 
 
 
-
-
-    ('Fido', 3, 27.)
-
-
-
-
-
-
-    array([9, 3])
-
-
-
-
-
-
-    array([('Rex', 5, 81.), ('Fido', 5, 27.)],
-          dtype=[('name', '<U10'), ('age', '<i4'), ('weight', '<f4')])
-
-
-
-##### Basic Operations¶
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
+### Basic Operations¶
 ```python
 
 # Create an array of ones
@@ -1010,66 +719,32 @@ np.arange(10,25,5)
 # Create an array of evenly-spaced values
 np.linspace(0,2,9)
 ```
+array([[1., 1., 1., 1.],<br>
+       [1., 1., 1., 1.],<br>
+       [1., 1., 1., 1.]])
 
-
-
-
-    array([[1., 1., 1., 1.],
-           [1., 1., 1., 1.],
-           [1., 1., 1., 1.]])
-
-
-
-
-
-
-    array([[[0, 0, 0, 0],
-            [0, 0, 0, 0],
-            [0, 0, 0, 0]],
+array([[[0, 0, 0, 0],<br>
+       [0, 0, 0, 0],<br>
+       [0, 0, 0, 0]],<br>
     
-           [[0, 0, 0, 0],
-            [0, 0, 0, 0],
-            [0, 0, 0, 0]]], dtype=int16)
+       [[0, 0, 0, 0],<br>
+       [0, 0, 0, 0],<br>
+       [0, 0, 0, 0]]], dtype=int16)
+
+array([[0.82614537, 0.88732649],<br>
+       [0.85561316, 0.16463622]])
+
+array([[0., 0.],<br>
+       [0., 0.],<br>
+       [0., 0.]])
 
 
+array([[7, 7],<br>
+       [7, 7]])
 
+array([10, 15, 20])
 
-
-
-    array([[0.82614537, 0.88732649],
-           [0.85561316, 0.16463622]])
-
-
-
-
-
-
-    array([[0., 0.],
-           [0., 0.],
-           [0., 0.]])
-
-
-
-
-
-
-    array([[7, 7],
-           [7, 7]])
-
-
-
-
-
-
-    array([10, 15, 20])
-
-
-
-
-
-
-    array([0.  , 0.25, 0.5 , 0.75, 1.  , 1.25, 1.5 , 1.75, 2.  ])
-
+array([0.  , 0.25, 0.5 , 0.75, 1.  , 1.25, 1.5 , 1.75, 2.  ])
 
 <h3><center>Common Numpy Functions</center></h3>
     
@@ -1085,4 +760,4 @@ np.linspace(0,2,9)
 |  my_array.corrcoef()        | Correlation coefficient          |
 |  np.std(my_array)           | Standard deviation               |
 
-<h1><center>THE END</h1>
+<h1><center>THE END</center></h1>
