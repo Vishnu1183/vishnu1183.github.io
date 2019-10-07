@@ -297,12 +297,12 @@ $e^{i\pi} + 1 = 0$
 ---
 ### 6.4) Inserting Local Images
 ```python
-![Alt sin_cos_curve](my_figure.png "Sine Vs Cos Curve")
+![Alt sin_cos_curve](/images/my_figure.png "Sine Vs Cos Curve")
 # Drag and drop the image in a markdown cell to add an image in python notebook.
 # In order to view image in pynb/HTML, image must be present at the location.
 # Hover over the image for the title text
 ```
-![Alt sin_cos_curve](my_figure.png "Sine Vs Cos Curve")
+![Alt sin_cos_curve](/images/my_figure.png "Sine Vs Cos Curve")
 
 ---
 ### 6.5) Inserting Local Images using code cell
@@ -314,12 +314,8 @@ from IPython.display import Image;
 Image('my_figure.png',width=400,height = 200)
 ```
 
-
-
-
-![png](output_31_0.png)
-
-
+from IPython.display import Image;
+Image('/images/my_figure.png',width=400,height = 200)
 
 ---
 ### 6.6) Inserting Online Images
