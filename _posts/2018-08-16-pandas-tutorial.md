@@ -5,62 +5,44 @@ tags: [pandas, python, jupyter]
 excerpt: "This tutorial contains pandas functions used for cleaning data."
 mathjax: "true"
 ---
+<!---<font size="5"><center><h2>Intro To Python For Data Analysis - Part 1</h2></center></font>-->
+<h6>01 Oct,2019</h6>
+<h6>By: Vishnu Prakash Singh</h6>
 
 ```python
 from IPython.display import Image;from datetime import date
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
 ```
-
-<font size="5"><center><h2>Intro To Python For Data Analysis - Part 1</h2></center></font>
-<h6>01 Oct,2019</h6>
-<h6>By: Vishnu Prakash Singh</h6>
-
 ### Pandas Series
 * Pandas Series is a one-dimensional labeled array capable of holding data of any type 
 * The axis labels are collectively called index. 
 * Labels need not be unique but must be a hashable type.
-
-
 
 ```python
 import pandas as pd
 data = pd.Series(np.random.randint(10, 20,6), index=pd.date_range('20130101', periods=6))
 print('Type of the series is ' + str(type(data)))
 ```
-
-    Type of the series is <class 'pandas.core.series.Series'>
-    
-
+Type of the series is <class 'pandas.core.series.Series'>
 
 ```python
 print('Index of the series is ' + str(data.index))
 ```
 
-    Index of the series is DatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04',
-                   '2013-01-05', '2013-01-06'],
-                  dtype='datetime64[ns]', freq='D')
-    
-
+Index of the series is DatetimeIndex(['2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04','2013-01-05', '2013-01-06'],dtype='datetime64[ns]', freq='D')
 
 ```python
 print('Values of the series is ' + str(data.values))
 ```
-
-    Values of the series is [12 14 18 12 13 10]
-    
-
+Values of the series is [12 14 18 12 13 10]
 
 ```python
 print('Data Type of the series is ' + str(data.dtype))
 ```
-
-    Data Type of the series is int32
-    
+Data Type of the series is int32
 
 ### Pandas DataFrame
-
-
 ```python
 np.random.seed(47)
 df = pd.DataFrame({'ID': map(str,np.arange(103,120,3)),   # map function maps str function to each item of list
@@ -71,16 +53,7 @@ df = pd.DataFrame({'ID': map(str,np.arange(103,120,3)),   # map function maps st
 df.shape
 df
 ```
-
-
-
-
-    (6, 5)
-
-
-
-
-
+(6, 5)
 
 <div>
 <style scoped>
@@ -168,10 +141,6 @@ df
 ```python
 df.dtypes
 ```
-
-
-
-
     ID                object
     DATE      datetime64[ns]
     VALUE            float64
@@ -179,15 +148,10 @@ df.dtypes
     SET               object
     dtype: object
 
-
-
 ##### info() returns various details of the dataframe
-
-
 ```python
 df.info()
 ```
-
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 6 entries, 0 to 5
     Data columns (total 5 columns):
@@ -199,17 +163,11 @@ df.info()
     dtypes: datetime64[ns](1), float64(1), int32(1), object(2)
     memory usage: 344.0+ bytes
     
-
 ###### describe() shows a quick statistic summary of your data:
-
 
 ```python
 df.describe()   # only takes numeric columns under consideration
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -277,19 +235,11 @@ df.describe()   # only takes numeric columns under consideration
 </table>
 </div>
 
-
-
 ##### Viewing pandas data
-
-
 ```python
 df.head(2)
 df.tail(2)
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -335,11 +285,6 @@ df.tail(2)
   </tbody>
 </table>
 </div>
-
-
-
-
-
 
 <div>
 <style scoped>
@@ -387,29 +332,15 @@ df.tail(2)
 </table>
 </div>
 
-
-
 ###### Display the index, columns:
-
 
 ```python
 df.index.to_list() # converting index to list for better printing
 df.columns
 ```
+[0, 1, 2, 3, 4, 5]
 
-
-
-
-    [0, 1, 2, 3, 4, 5]
-
-
-
-
-
-
-    Index(['ID', 'DATE', 'VALUE', 'VOLUME', 'SET'], dtype='object')
-
-
+Index(['ID', 'DATE', 'VALUE', 'VOLUME', 'SET'], dtype='object')
 
 ###### pandas to numpy
 ###### Note DataFrame.to_numpy() does not include the index or column labels in the output.
@@ -418,23 +349,15 @@ df.columns
 ```python
 df.to_numpy()
 ```
-
-
-
-
-    array([['103', Timestamp('2019-01-01 00:00:00'), 1453.95, 14, 'train'],
+array([['103', Timestamp('2019-01-01 00:00:00'), 1453.95, 14, 'train'],
            ['106', Timestamp('2019-01-02 00:00:00'), 4897.93, 18, 'train'],
            ['109', Timestamp('2019-01-03 00:00:00'), 3914.94, 19, 'test'],
            ['112', Timestamp('2019-01-04 00:00:00'), 2405.87, 19, 'test'],
            ['115', Timestamp('2019-01-05 00:00:00'), 3830.42, 12, 'train'],
            ['118', Timestamp('2019-01-06 00:00:00'), 4198.42, 2, 'test']],
           dtype=object)
-
-
-
+          
 ##### Converting datatype of variable
-
-
 ```python
 df.dtypes
 
@@ -447,10 +370,6 @@ df.ID.dtype
 df['VOLUME'] = df.VOLUME.astype(int)   # converting from string to integer
 df.VOLUME.dtype
 ```
-
-
-
-
     ID                object
     DATE      datetime64[ns]
     VALUE            float64
@@ -458,46 +377,18 @@ df.VOLUME.dtype
     SET               object
     dtype: object
 
+dtype('O')
 
+CategoricalDtype(categories=['103', '106', '109', '112', '115', '118'], ordered=False)
 
-
-
-
-    dtype('O')
-
-
-
-
-
-
-    CategoricalDtype(categories=['103', '106', '109', '112', '115', '118'], ordered=False)
-
-
-
-
-
-
-    dtype('int32')
-
-
+dtype('int32')
 
 ###### Transposing your data:
-
-
 ```python
 df.T.shape  # rows and columns got interchanged
 df.T
 ```
-
-
-
-
-    (5, 6)
-
-
-
-
-
+(5, 6)
 
 <div>
 <style scoped>
@@ -575,21 +466,14 @@ df.T
 </table>
 </div>
 
-
-
 ###### Sorting by an axis:
 * axis 0 means row wise operation
 * axis 1 means column wise operation
-
 
 ```python
 # sorting by the row index
 df.sort_index(axis=0, ascending=False)
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -667,18 +551,11 @@ df.sort_index(axis=0, ascending=False)
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 # sorting by the column index
 df.sort_index(axis=1, ascending=False)
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -756,18 +633,11 @@ df.sort_index(axis=1, ascending=False)
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 # sorting by a column
 df.sort_values(by='VOLUME', ascending = False)
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -846,18 +716,11 @@ df.sort_values(by='VOLUME', ascending = False)
 </table>
 </div>
 
-
-
 ### Selection of subset of data
-
-
 ```python
 #Selecting a single column, which yields a Series, equivalent to df.ID
 df['ID']  # returns pandas.core.series.Series
 ```
-
-
-
 
     0    103
     1    106
@@ -868,16 +731,10 @@ df['ID']  # returns pandas.core.series.Series
     Name: ID, dtype: category
     Categories (6, object): [103, 106, 109, 112, 115, 118]
 
-
-
-
 ```python
 #Selecting via [], which slices the rows.
 df[0:3]
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -933,17 +790,11 @@ df[0:3]
 </table>
 </div>
 
-
-
 ###### Selection by label using loc
-
 
 ```python
 df.loc[:,['VALUE']] # returns pandas.core.frame.DataFrame
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -995,15 +846,9 @@ df.loc[:,['VALUE']] # returns pandas.core.frame.DataFrame
 </table>
 </div>
 
-
-
-
 ```python
 df.loc[0:1]
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1051,16 +896,9 @@ df.loc[0:1]
 </table>
 </div>
 
-
-
-
 ```python
 df.loc[1:2:, ['ID', 'VALUE']]
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1101,15 +939,9 @@ df.loc[1:2:, ['ID', 'VALUE']]
 
 
 ### Selection by position using iloc
-
-
 ```python
 df.iloc[3]
 ```
-
-
-
-
     ID                        112
     DATE      2019-01-04 00:00:00
     VALUE                 2405.87
@@ -1117,16 +949,9 @@ df.iloc[3]
     SET                      test
     Name: 3, dtype: object
 
-
-
-
 ```python
 df.iloc[[1, 2, 4], [0, 2]]
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1169,18 +994,10 @@ df.iloc[[1, 2, 4], [0, 2]]
 </table>
 </div>
 
-
-
 ### Boolean indexing
-
-
 ```python
 df[df.VALUE > 3500]
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1243,16 +1060,9 @@ df[df.VALUE > 3500]
 </table>
 </div>
 
-
-
-
 ```python
 df[df.SET.isin(['train'])]  # df[df.SET=='train']
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1306,17 +1116,10 @@ df[df.SET.isin(['train'])]  # df[df.SET=='train']
   </tbody>
 </table>
 </div>
-
-
-
 
 ```python
 df[df.SET=='train']
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1371,10 +1174,7 @@ df[df.SET=='train']
 </table>
 </div>
 
-
-
 ### Missing data
-
 
 ```python
 df1 = df.copy() # creates a copy of dataframe
@@ -1389,16 +1189,7 @@ df1.loc[5,'SET'] = np.NaN # replacing value with NA
 df1.VALUE.isna().sum()
 df1.isna().sum()
 ```
-
-
-
-
-    2
-
-
-
-
-
+2
 
     ID        0
     DATE      1
@@ -1407,16 +1198,10 @@ df1.isna().sum()
     SET       1
     dtype: int64
 
-
-
-
 ```python
 #To drop any rows that have missing data.
 df1.dropna(how='any')
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -1472,19 +1257,12 @@ df1.dropna(how='any')
 </table>
 </div>
 
-
-
-
 ```python
 #To drop a row specific to a column that have missing data.
 df1.dropna(subset = ['SET'],inplace = True) 
 # when inplace = True, the output is stored in the same dataframe on which operation is done
 df1
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1555,33 +1333,18 @@ df1
 </table>
 </div>
 
-
-
 ### Operations
-
-
 ```python
 df.mean() # df.mean(axis = 0)
 ```
-
-
-
-
     ID        1.718435e+16
     VALUE     3.450255e+03
     VOLUME    1.400000e+01
     dtype: float64
 
-
-
-
 ```python
  df.mean(1) ## df.mean(axis = 1) ; gives mean for numeric data only
 ```
-
-
-
-
     0     733.975
     1    2457.965
     2    1966.970
