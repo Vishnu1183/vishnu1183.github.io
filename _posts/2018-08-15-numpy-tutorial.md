@@ -5,16 +5,15 @@ tags: [numpy, python, jupyter]
 excerpt: "This tutorial contains basic numpy functions used for data analysis."
 mathjax: "true"
 ---
+<!---<font size="5"><center><h2>Intro To Python For Data Analysis - Part 1</h2></center></font>-->
+<h6>01 Oct,2019</h6>
+<h6>By: Vishnu Prakash Singh</h6>
 
 ```python
 from IPython.display import Image;from datetime import date
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
 ```
-
-<font size="5"><center><h2>Intro To Python For Data Analysis - Part 1</h2></center></font>
-<h6>01 Oct,2019</h6>
-<h6>By: Vishnu Prakash Singh</h6>
 
 ## Numpy Array
 
@@ -619,15 +618,12 @@ array([[[5, 4, 6, 8, 3]]])
 array([[[42, 34, 50, 66, 26],<br>
        [27, 22, 32, 42, 17],<br>
        [22, 18, 26, 34, 14]],<br>
-    
        [[43, 35, 51, 67, 27],<br>
        [28, 23, 33, 43, 18],<br>
        [23, 19, 27, 35, 15]],<br>
-    
        [[44, 36, 52, 68, 28],<br>
        [29, 24, 34, 44, 19],<br>
        [24, 20, 28, 36, 16]],<br>
-    
        [[45, 37, 53, 69, 29],<br>
        [30, 25, 35, 45, 20],<br>
        [25, 21, 29, 37, 17]]])
@@ -674,12 +670,8 @@ array([[-3.],
 x = np.array([('Rex', 9, 81.0), ('Fido', 3, 27.0)],
               dtype=[('name', 'U10'), ('age', 'i4'), ('weight', 'f4')])
 x
-
-
 x[1]
-
 x['age']
-
 x['age'] = 5
 x
 ```
@@ -726,7 +718,6 @@ array([[1., 1., 1., 1.],<br>
 array([[[0, 0, 0, 0],<br>
        [0, 0, 0, 0],<br>
        [0, 0, 0, 0]],<br>
-    
        [[0, 0, 0, 0],<br>
        [0, 0, 0, 0],<br>
        [0, 0, 0, 0]]], dtype=int16)
@@ -738,7 +729,6 @@ array([[0., 0.],<br>
        [0., 0.],<br>
        [0., 0.]])
 
-
 array([[7, 7],<br>
        [7, 7]])
 
@@ -746,7 +736,7 @@ array([10, 15, 20])
 
 array([0.  , 0.25, 0.5 , 0.75, 1.  , 1.25, 1.5 , 1.75, 2.  ])
 
-<h3><center>Common Numpy Functions</center></h3>
+<h3>Common Numpy Functions</h3>
     
 
 | Numpy Functions             | Description                      |
