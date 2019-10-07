@@ -320,4 +320,4 @@ lst_sqr
 ```
     [1, 4, 9, 16, 25]
 
-<h1><center>THE END</h1>
+<h3><center>THE END</center></h3>
