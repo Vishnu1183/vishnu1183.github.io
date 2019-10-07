@@ -5,16 +5,15 @@ tags: [anaconda, python, jupyter]
 excerpt: "This tutorial helps in setting up python & jupyter in machine."
 mathjax: "true"
 ---
+<!---<font size="5"><center><h2>Intro To Python For Data Analysis - Part 1</h2></center></font>-->
+<h6>By: Vishnu Prakash Singh</h6>
+<h6>01 Oct,2019</h6>
 
 ```python
 from IPython.display import Image;from datetime import date
 from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
 ```
-
-<font size="5"><center><h2>Intro To Python For Data Analysis - Part 1</h2></center></font>
-<h6>01 Oct,2019</h6>
-<h6>By: Vishnu Prakash Singh</h6>
 
 <h1><font size="5">About Python-</font></h1>
 
@@ -34,12 +33,7 @@ InteractiveShell.ast_node_interactivity = "all"
 Image('inst_py.png',width=400,height = 200)
 ```
 
-
-
-
-![png](output_4_0.png)
-
-
+![png](/images/output_4_0.png)
 
 <h1><font size="5">Important python libraries for data science</font></h1>
 
@@ -57,12 +51,7 @@ Image('inst_py.png',width=400,height = 200)
 Image('python-lib.png',width=400,height = 200)
 ```
 
-
-
-
-![png](output_6_0.png)
-
-
+![png](/images/output_6_0.png)
 
 <h3>Expressions in Python </h3>
 
@@ -164,21 +153,9 @@ print('Replicating list2 twice ' + str(list2*2))
 list1
 list2
 ```
-
-
-
-
     ['xyz', 1, 1.5, 'False']
 
-
-
-
-
-
     ['A', 'B', 'C']
-
-
-
 
 ```python
 # appending value to list
@@ -186,11 +163,8 @@ list4 = [1,3,'v',True]
 list4.append('X')
 print('Appended List is ' + str(list4))
 ```
-
     Replicating list2 twice [1, 3, 'v', True, 'X']
     
-
-
 ```python
 # Extending list
 list4 = [1,3,'v',True]
@@ -198,51 +172,34 @@ list5 = [2,'s',False]
 list4.append(list5)
 print('Extended List is ' + str(list4))
 ```
-
     Extended List is [1, 3, 'v', True, [2, 's', False]]
     
-
-
 ```python
 # Inserting value in a list
 list4 = [1,3,'v',True]
 list4.insert(2,'C')
 print('Updated list after inserting "C" at 2nd index ' + str(list4))
 ```
-
     Updated list after inserting "C" at 2nd index [1, 3, ['C', 3], 'v', True]
     
-
-
 ```python
 # Removing value in a list
 list4 = [1,3,'v',True]
 list4.remove('v')
 print('Updated list after removing "v" is ' + str(list4))
 ```
-
     Updated list after removing "v" is [1, 3, True]
     
-
-
 ```python
 # Popping value in a list
 list4 = [1,3,'v',True]
 list4.pop(1)
 print('Updated list after removing item at 1st index ' + str(list4))
 ```
-
-
-
-
     3
-
-
 
     Updated list after removing item at 1st index [1, 'v', True]
     
-
-
 ```python
 # Index, count, reverse functions
 list6 = ['A', 'B', 'C', 'A', 'A']
@@ -277,87 +234,36 @@ dict1.values()
 
 
     'Bank'
-
-
-
-
-
-
+    
     dict_items([('Name', 'Bank'), ('Age', 20), ('Class', 'First')])
-
-
-
-
-
-
+    
     dict_keys(['Name', 'Age', 'Class'])
-
-
-
-
-
-
+    
     dict_values(['Bank', 20, 'First'])
-
-
-
-
+    
 ```python
 # accessing values of dictionary
 dict1['Name']
 dict1.get('Age')
 ```
-
-
-
-
     'Bank'
-
-
-
-
-
-
+    
     20
-
-
-
-
 ```python
 # dictionary within dictionary
 dict2={"child1": {"name":"x","age":5},"child2": {"name":"y","age":15}}
 dict2['child1']['name']
 dict2['child2']['age']
 ```
-
-
-
-
     'x'
 
-
-
-
-
-
     15
-
-
-
-
 ```python
 # inversing a dict using dict comprehension
 inv_dict1 = {val: key for key, val in dict1.items()}
 inv_dict1
 ```
-
-
-
-
     {'Bank': 'Name', 20: 'Age', 'First': 'Class'}
-
-
-
 ### Tuple
 
 * A tuple is a sequence of immutable Python objects
@@ -394,14 +300,11 @@ else:
 for color in ['blue', 'orange', 'red', 'black']:
     print(color)
 ```
-
     blue
     orange
     red
     black
     
-
-
 ```python
 lst = [1,2,3,4,5]
 lst_sqr = []
@@ -409,13 +312,7 @@ for i in range(len(lst)):
     lst_sqr.append(lst[i]*lst[i])
 lst_sqr
 ```
-
-
-
-
     [1, 4, 9, 16, 25]
-
-
 
 ###### using list comprehension
 
@@ -423,12 +320,6 @@ lst_sqr
 ```python
 [i*i for i in lst]
 ```
-
-
-
-
     [1, 4, 9, 16, 25]
-
-
 
 <h1><center>THE END</h1>
