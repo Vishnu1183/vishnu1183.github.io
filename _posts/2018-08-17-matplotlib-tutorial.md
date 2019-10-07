@@ -5,7 +5,9 @@ tags: [matplotlib, python, jupyter]
 excerpt: "This tutorial contains matplotlib functions for data visualisation."
 mathjax: "true"
 ---
-
+<!---<font size="5"><center><h2>Intro To Python For Data Analysis - Part 1</h2></center></font>-->
+<h6>By: Vishnu Prakash Singh</h6>
+<h6>01 Oct,2019</h6>
 
 ```python
 from IPython.display import Image;from datetime import date
@@ -13,12 +15,7 @@ from IPython.core.interactiveshell import InteractiveShell
 InteractiveShell.ast_node_interactivity = "all"
 ```
 
-<font size="5"><center><h2>Intro To Python For Data Analysis - Part 1</h2></center></font>
-<h6>01 Oct,2019</h6>
-<h6>By: Vishnu Prakash Singh</h6>
-
 ### Data Visualisation using matplotlib
-
 
 ```python
 from matplotlib import pyplot as plt
@@ -29,7 +26,6 @@ ts = ts.cumsum()
 
 ts.plot();
 ```
-
 
 ```python
 x = np.arange(0,4*np.pi,0.1)   # start,stop,step
@@ -43,11 +39,7 @@ plt.title('Plot of sin and cos from 0 to 4pi');
 plt.legend(['sin(x)', 'cos(x)']);     
 plt.show();
 ```
-
-
-![png](output_4_0.png)
-
-
+![png](/images/output_4_0.png)
 
 ```python
 #saving the plot
@@ -63,10 +55,7 @@ plt.plot(x,y, 'blue');
 plt.subplot(1,2,2);
 plt.plot(x,z, 'orange');
 ```
-
-
-![png](output_7_0.png)
-
+![png](/images/output_7_0.png)
 
 ### Reading Titanic Dataset
 [Download From Here](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html)
@@ -77,10 +66,6 @@ path = 'C:/Users/392256/Documents/Intro to Python'   # change the path to your f
 titanic_data = pd.read_csv(f'{path}/titanic.csv')
 titanic_data.head(3)
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -147,11 +132,7 @@ titanic_data.head(3)
 </table>
 </div>
 
-
-
 #### Scatter Plot
-
-
 ```python
 # create a figure and axis
 fig, ax = plt.subplots()
@@ -163,10 +144,7 @@ ax.set_title('Fare vs Age Scatter Plot');
 ax.set_xlabel('Age');
 ax.set_ylabel('Fare');
 ```
-
-
-![png](output_11_0.png)
-
+![png](/images/output_11_0.png)
 
 #### Line Chart
 
@@ -191,16 +169,9 @@ ax.legend();
  #      range(0, titanic_data.shape[0]),titanic_data.Age);
 #ax.legend()
 ```
-
-    No handles with labels found to put in legend.
-    
-
-
-![png](output_13_1.png)
-
+![png](/images/output_13_1.png)
 
 ##### Histogram
-
 
 ```python
 # create figure and axis
@@ -212,10 +183,7 @@ ax.set_title('Age Histogram');
 ax.set_xlabel('Age in years');
 ax.set_ylabel('Frequency');
 ```
-
-
-![png](output_15_0.png)
-
+![png](/images/output_15_0.png)
 
 ##### Bar Chart
 
@@ -235,10 +203,7 @@ ax.set_title('Passenger Class Bar Chart');
 ax.set_xlabel('Passenger Class');
 ax.set_ylabel('Frequency');
 ```
-
-
-![png](output_17_0.png)
-
+![png](/images/output_17_0.png)
 
 ##### Box Plot
 
@@ -253,7 +218,7 @@ ax.set_ylabel('Age in years');
 ```
 
 
-![png](output_20_0.png)
+![png](/images/output_20_0.png)
 
 
 ##### Box Plot of Age variable grouped by survive using matplotlib
@@ -270,7 +235,7 @@ plt.xticks([1, 2], [0,1]);
 ```
 
 
-![png](output_22_0.png)
+![png](/images/output_22_0.png)
 
 
 ##### Box Plot of Age variable grouped by survive using Pandas
@@ -281,7 +246,7 @@ titanic_data[['Age','Survived']].boxplot(by='Survived');
 ```
 
 
-![png](output_24_0.png)
+![png](/images/output_24_0.png)
 
 
-<h1><center>THE END</h1>
+<h1><center>THE END</center></h1>
