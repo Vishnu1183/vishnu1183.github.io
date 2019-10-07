@@ -110,14 +110,12 @@ print('Last item of list is ' + str(list1[-1]))
 print('First 2 items of list are ' + str(list1[0:2]))
 print('Last 2 items of list are ' + str(list1[-2:]))
 ```
-
-    Length of list is 4
-    First item of list is abc
-    Last item of list is True
-    First 2 items of list are ['abc', 1]
-    Last 2 items of list are [1.5, True]
+Length of list is 4
+First item of list is abc
+Last item of list is True
+First 2 items of list are ['abc', 1]
+Last 2 items of list are [1.5, True]
     
-
 ##### Updating list
 
 
@@ -127,14 +125,10 @@ print('New list is ' + str(list1))
 list1[-1] = 'False'
 print('New list is ' + str(list1))
 ```
-
-    New list is ['xyz', 1, 1.5, True]
-    New list is ['xyz', 1, 1.5, 'False']
+New list is ['xyz', 1, 1.5, True]
+New list is ['xyz', 1, 1.5, 'False']
     
-
 ##### List Concatenation and List Replication
-
-
 ```python
 list2 = ['A', 'B', 'C']
 list3 = list1 + list2
@@ -142,18 +136,15 @@ print('Concatenated list is ' + str(list3))
 print('Replicating list2 twice ' + str(list2*2))
 ```
 
-    Concatenated list is ['xyz', 1, 1.5, 'False', 'A', 'B', 'C']
-    Replicating list2 twice ['A', 'B', 'C', 'A', 'B', 'C']
+Concatenated list is ['xyz', 1, 1.5, 'False', 'A', 'B', 'C']
+Replicating list2 twice ['A', 'B', 'C', 'A', 'B', 'C']
     
-
-
 ```python
 list1
 list2
 ```
-    ['xyz', 1, 1.5, 'False']
-
-    ['A', 'B', 'C']
+['xyz', 1, 1.5, 'False']
+['A', 'B', 'C']
 
 ```python
 # appending value to list
@@ -161,7 +152,7 @@ list4 = [1,3,'v',True]
 list4.append('X')
 print('Appended List is ' + str(list4))
 ```
-    Replicating list2 twice [1, 3, 'v', True, 'X']
+Replicating list2 twice [1, 3, 'v', True, 'X']
     
 ```python
 # Extending list
@@ -170,7 +161,7 @@ list5 = [2,'s',False]
 list4.append(list5)
 print('Extended List is ' + str(list4))
 ```
-    Extended List is [1, 3, 'v', True, [2, 's', False]]
+Extended List is [1, 3, 'v', True, [2, 's', False]]
     
 ```python
 # Inserting value in a list
@@ -178,7 +169,7 @@ list4 = [1,3,'v',True]
 list4.insert(2,'C')
 print('Updated list after inserting "C" at 2nd index ' + str(list4))
 ```
-    Updated list after inserting "C" at 2nd index [1, 3, ['C', 3], 'v', True]
+Updated list after inserting "C" at 2nd index [1, 3, ['C', 3], 'v', True]
     
 ```python
 # Removing value in a list
@@ -186,7 +177,7 @@ list4 = [1,3,'v',True]
 list4.remove('v')
 print('Updated list after removing "v" is ' + str(list4))
 ```
-    Updated list after removing "v" is [1, 3, True]
+Updated list after removing "v" is [1, 3, True]
     
 ```python
 # Popping value in a list
@@ -194,9 +185,8 @@ list4 = [1,3,'v',True]
 list4.pop(1)
 print('Updated list after removing item at 1st index ' + str(list4))
 ```
-    3
-
-    Updated list after removing item at 1st index [1, 'v', True]
+3
+Updated list after removing item at 1st index [1, 'v', True]
     
 ```python
 # Index, count, reverse functions
@@ -206,9 +196,9 @@ print('Count of element "A" is ' + str(list6.count('A')))
 print('Reversed list is ' + str(list6.reverse()))
 ```
 
-    Index of element "B" is 1
-    Count of element "A" is 3
-    Reversed list is None
+Index of element "B" is 1
+Count of element "A" is 3
+Reversed list is None
     
 
 ### Dictionary
@@ -227,24 +217,17 @@ dict1.items()
 dict1.keys()
 dict1.values()
 ```
-
-
-
-
-    'Bank'
-    
-    dict_items([('Name', 'Bank'), ('Age', 20), ('Class', 'First')])
-    
-    dict_keys(['Name', 'Age', 'Class'])
-    
-    dict_values(['Bank', 20, 'First'])
+'Bank'
+dict_items([('Name', 'Bank'), ('Age', 20), ('Class', 'First')])
+dict_keys(['Name', 'Age', 'Class'])
+dict_values(['Bank', 20, 'First'])
     
 ```python
 # accessing values of dictionary
 dict1['Name']
 dict1.get('Age')
 ```
-    'Bank'
+'Bank'
     
     20
 ```python
@@ -253,15 +236,14 @@ dict2={"child1": {"name":"x","age":5},"child2": {"name":"y","age":15}}
 dict2['child1']['name']
 dict2['child2']['age']
 ```
-    'x'
-
-    15
+'x'
+15
 ```python
 # inversing a dict using dict comprehension
 inv_dict1 = {val: key for key, val in dict1.items()}
 inv_dict1
 ```
-    {'Bank': 'Name', 20: 'Age', 'First': 'Class'}
+{'Bank': 'Name', 20: 'Age', 'First': 'Class'}
 ### Tuple
 
 * A tuple is a sequence of immutable Python objects
@@ -286,22 +268,19 @@ elif today == 'monday':
 else:
     print('Today is neither monday nor saturday')
 ```
-
-    sunday
-    Today is neither monday nor saturday
+sunday
+Today is neither monday nor saturday
     
 
 ##### For loop
-
-
 ```python
 for color in ['blue', 'orange', 'red', 'black']:
     print(color)
 ```
-    blue
-    orange
-    red
-    black
+blue
+orange
+red
+black
     
 ```python
 lst = [1,2,3,4,5]
@@ -310,7 +289,7 @@ for i in range(len(lst)):
     lst_sqr.append(lst[i]*lst[i])
 lst_sqr
 ```
-    [1, 4, 9, 16, 25]
+[1, 4, 9, 16, 25]
 
 ###### using list comprehension
 
@@ -318,6 +297,6 @@ lst_sqr
 ```python
 [i*i for i in lst]
 ```
-    [1, 4, 9, 16, 25]
+[1, 4, 9, 16, 25]
 
 <h3><center>THE END</center></h3>
