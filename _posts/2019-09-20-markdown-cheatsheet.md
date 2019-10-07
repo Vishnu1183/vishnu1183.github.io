@@ -5,8 +5,6 @@ tags: [markdown, python, jupyter]
 excerpt: "This tutorial contains basic markdown syntax using jupyter notebook."
 mathjax: "true"
 ---
-
-<h1><center><font color = 'blue' face = 'times'>MARKDOWN BASICS</font></center></h1>
 <h5>By - Vishnu Prakash Singh</h5>
 <h6>24th Aug,2019</h6>
 
