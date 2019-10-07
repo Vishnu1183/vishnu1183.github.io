@@ -33,7 +33,7 @@ InteractiveShell.ast_node_interactivity = "all"
 Image('inst_py.png',width=400,height = 200)
 ```
 
-![png](/images/output_4_0.png)
+![png](/images/output_4_0 (2).png)
 
 <h1><font size="5">Important python libraries for data science</font></h1>
 
