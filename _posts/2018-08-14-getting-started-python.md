@@ -110,10 +110,10 @@ print('Last item of list is ' + str(list1[-1]))
 print('First 2 items of list are ' + str(list1[0:2]))
 print('Last 2 items of list are ' + str(list1[-2:]))
 ```
-Length of list is 4
-First item of list is abc
-Last item of list is True
-First 2 items of list are ['abc', 1]
+Length of list is 4 <br>
+First item of list is abc <br>
+Last item of list is True <br>
+First 2 items of list are ['abc', 1] <br>
 Last 2 items of list are [1.5, True]
     
 ##### Updating list
@@ -125,7 +125,7 @@ print('New list is ' + str(list1))
 list1[-1] = 'False'
 print('New list is ' + str(list1))
 ```
-New list is ['xyz', 1, 1.5, True]
+New list is ['xyz', 1, 1.5, True] <br>
 New list is ['xyz', 1, 1.5, 'False']
     
 ##### List Concatenation and List Replication
@@ -136,14 +136,14 @@ print('Concatenated list is ' + str(list3))
 print('Replicating list2 twice ' + str(list2*2))
 ```
 
-Concatenated list is ['xyz', 1, 1.5, 'False', 'A', 'B', 'C']
+Concatenated list is ['xyz', 1, 1.5, 'False', 'A', 'B', 'C'] <br>
 Replicating list2 twice ['A', 'B', 'C', 'A', 'B', 'C']
     
 ```python
 list1
 list2
 ```
-['xyz', 1, 1.5, 'False']
+['xyz', 1, 1.5, 'False'] <br>
 ['A', 'B', 'C']
 
 ```python
@@ -185,7 +185,7 @@ list4 = [1,3,'v',True]
 list4.pop(1)
 print('Updated list after removing item at 1st index ' + str(list4))
 ```
-3
+3 <br>
 Updated list after removing item at 1st index [1, 'v', True]
     
 ```python
@@ -196,8 +196,8 @@ print('Count of element "A" is ' + str(list6.count('A')))
 print('Reversed list is ' + str(list6.reverse()))
 ```
 
-Index of element "B" is 1
-Count of element "A" is 3
+Index of element "B" is 1 <br>
+Count of element "A" is 3 <br>
 Reversed list is None
     
 
@@ -217,9 +217,9 @@ dict1.items()
 dict1.keys()
 dict1.values()
 ```
-'Bank'
-dict_items([('Name', 'Bank'), ('Age', 20), ('Class', 'First')])
-dict_keys(['Name', 'Age', 'Class'])
+'Bank' <br>
+dict_items([('Name', 'Bank'), ('Age', 20), ('Class', 'First')]) <br>
+dict_keys(['Name', 'Age', 'Class']) <br>
 dict_values(['Bank', 20, 'First'])
     
 ```python
@@ -227,7 +227,7 @@ dict_values(['Bank', 20, 'First'])
 dict1['Name']
 dict1.get('Age')
 ```
-'Bank'   
+'Bank'  <br>
 20
 
 ```python
@@ -236,7 +236,7 @@ dict2={"child1": {"name":"x","age":5},"child2": {"name":"y","age":15}}
 dict2['child1']['name']
 dict2['child2']['age']
 ```
-'x'
+'x' <br>
 15
 ```python
 # inversing a dict using dict comprehension
@@ -268,7 +268,7 @@ elif today == 'monday':
 else:
     print('Today is neither monday nor saturday')
 ```
-sunday
+sunday <br>
 Today is neither monday nor saturday
     
 
@@ -277,9 +277,9 @@ Today is neither monday nor saturday
 for color in ['blue', 'orange', 'red', 'black']:
     print(color)
 ```
-blue
-orange
-red
+blue <br>
+orange <br>
+red <br>
 black
     
 ```python
