@@ -17,12 +17,12 @@ InteractiveShell.ast_node_interactivity = "all"
 
 <h1><font size="5">About Python-</font></h1>
 
-* <h6>Created By Guido Van Rossum</h6>
-* <h6>First released in 1991</h6>
-* <h6>Interpreted, high-level, general-purpose programming language</h6>
-* <h6>Purpose: build anything</h6>
-* <h6>It is Open Source</h6>
-* <h6>Python Packages like numpy, pandas, scikit learn available for Data Science</h6>
+* Created By Guido Van Rossum
+* First released in 1991
+* Interpreted, high-level, general-purpose programming language
+* Purpose: build anything
+* It is Open Source
+* Python Packages like numpy, pandas, scikit learn available for Data Science
 
 ### Installing Python
 [click here for win32](https://repo.continuum.io/archive/.winzip/Anaconda3-2019.07-Windows-x86.zip); 
@@ -37,14 +37,14 @@ Image('inst_py.png',width=400,height = 200)
 
 <h1><font size="5">Important python libraries for data science</font></h1>
 
-* <h5>Numpy</h5>
-   * <h6>For scientific computing with Python</h6>
-* <h5>Pandas</h5>
-   * <h6>Provides various high level convenient data structures, functions, and classes </h6>
-* <h5>Matplotlib</h5>
-    * <h6>for data visualization</h6>
-* <h5>Scikit learn</h5>
-    * <h6>Machine learning library for the Python programming language. </h6>
+* Numpy
+   * For scientific computing with Python
+* Pandas
+   * Provides various high level convenient data structures, functions, and classes
+* Matplotlib
+    * For data visualization
+* Scikit learn
+    * Machine learning library for the Python programming language.
 
 
 ```python
@@ -55,10 +55,11 @@ Image('python-lib.png',width=400,height = 200)
 
 <h3>Expressions in Python </h3>
 
-   * <h6>In python, 2 + 3 is an example of basic expression</h6>
-   * <h6>Expression has values & operators</h6>
-   * <h6>Expressions always reduce down to a single value</h6>
-   * <h6>The operators and values are put together as per python rules</h6>
+   * In python, 2 + 3 is an example of basic expression
+   * Expression has values & operators
+   * Expressions always reduce down to a single value
+   * The operators and values are put together as per python rules
+   * The values in an expression can have various data types
 
 <h3><center> Math Operators from Highest to Lowest Precedence</center></h3>
 
@@ -72,14 +73,12 @@ Image('python-lib.png',width=400,height = 200)
 | -        | Subtraction                      |  6-2    | 4             |
 | +        | Addition                         | 6+2     | 8             |
 
-### The values in an expression can have various data types
-
 <h3>Common Data Types</h3>
 
 | Data type              | Examples                  |
 |------------------------|---------------------------|
-| Integers               | `-1, -2,  0 , 1, 3 , 5    |
-| Floating-point numbers | `-1.34, -1.0, 0.0, 3.45   |
+| Integers               |  -1, -2,  0 , 1, 3 , 5    |
+| Floating-point numbers |  -1.34, -1.0, 0.0, 3.45   |
 | Strings                | Hello', 'PYTHON', 'LeArN' |
 | Bool                   | True , False              |
 
@@ -101,7 +100,6 @@ Image('python-lib.png',width=400,height = 200)
 * Basic operations on list are as follows
 
 ##### Accessing elements of list
-
 
 ```python
 list1 = [ 'abc', 1, 1.50, True ]
