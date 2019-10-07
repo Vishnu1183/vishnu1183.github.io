@@ -227,9 +227,9 @@ dict_values(['Bank', 20, 'First'])
 dict1['Name']
 dict1.get('Age')
 ```
-'Bank'
-    
-    20
+'Bank'   
+20
+
 ```python
 # dictionary within dictionary
 dict2={"child1": {"name":"x","age":5},"child2": {"name":"y","age":15}}
