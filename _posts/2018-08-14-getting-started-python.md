@@ -64,17 +64,17 @@ Image('python-lib.png',width=400,height = 200)
 
 | Operator | Operation                        | Example | Evaluates to… |
 |----------|----------------------------------|---------|---------------|
-| **       | Exponent                         | `2**3   | 8             |
+| **       | Exponent                         |  2**3   | 8             |
 | %        | Modulus/remainder                | 23%6    | 5             |
 | //       | Integer division                 | 23//6   | 3             |
 | /        | Division                         | 23/6    | 3.83          |
 | *        | Multiplication                   | 2*6     | 12            |
-| -        | Subtraction                      | `6-2    | 4             |
+| -        | Subtraction                      |  6-2    | 4             |
 | +        | Addition                         | 6+2     | 8             |
 
 ### The values in an expression can have various data types
 
-<h3><center>Common Data Types</center></h3>
+<h3>Common Data Types</h3>
 
 | Data type              | Examples                  |
 |------------------------|---------------------------|
@@ -83,12 +83,12 @@ Image('python-lib.png',width=400,height = 200)
 | Strings                | Hello', 'PYTHON', 'LeArN' |
 | Bool                   | True , False              |
 
-<h2>Data Structures and Sequences</h2>
+<h3>Data Structures and Sequences</h3>
 
-* <h3>List</h3>
-* <h3>Dictionary</h3>
-* <h3>Tuple</h3>
-* <h3>Numpy Array</h3>
+* List
+* Dictionary
+* Tuple
+* Numpy Array
 
 <h3>List</h3>
 
