@@ -11,7 +11,7 @@ mathjax: "true"
 <h6>24th Aug,2019</h6>
 
 ### Notes:
-* Convert the code cell into markdown cell using the drop down box in task bar.
+* Convert the code cell of jupyter notebook into markdown cell using the drop down box in task bar.
 * Same can be done using shortcut 'm' in command mode or esc + 'm' in edit mode.
 * In each cell of the tutorial, codes is above and corresponding output is below in the same cell.
 
