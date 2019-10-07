@@ -1,5 +1,5 @@
 ---
-title: "Basic Markdown Syntax"
+title: <h1><center><font color = 'blue' face = 'times'>MARKDOWN BASICS</font></center></h1>
 date: 2019-09-20
 tags: [markdown, python, jupyter]
 excerpt: "This tutorial contains basic markdown syntax using jupyter notebook."
