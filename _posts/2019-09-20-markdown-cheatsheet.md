@@ -314,8 +314,7 @@ from IPython.display import Image;
 Image('my_figure.png',width=400,height = 200)
 ```
 
-from IPython.display import Image;
-Image('/images/my_figure.png',width=400,height = 200)
+![](/images/my_figure.png)
 
 ---
 ### 6.6) Inserting Online Images
