@@ -11,4 +11,4 @@ date: 2021-01-01
 ---
 
 
-<image src="https://github.com/Vishnu1183/Data-Science-Tutorials/raw/master/Vishnu_Photo_Resume.pdf"/>
+<embed src="https://github.com/Vishnu1183/Data-Science-Tutorials/raw/master/Vishnu_Photo_Resume.pdf" type="application/pdf">
