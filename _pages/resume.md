@@ -10,4 +10,4 @@ classes: wide
 date: 2021-01-01
 ---
 
-<a href="/images/Vishnu_Photo_Resume.pdf" class="image fit"><img src="images/my_figure.png" alt=""></a>
+[xyx](./images/Vishnu_Photo_Resume.pdf.pdf)
