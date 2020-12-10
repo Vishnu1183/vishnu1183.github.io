@@ -10,5 +10,4 @@ classes: wide
 date: 2021-01-01
 ---
 
-
-<embed src="https://github.com/Vishnu1183/vishnu1183.github.io/raw/master/images/Vishnu_Photo_Resume.pdf" type="application/pdf">
+<a href="/images/Vishnu_Photo_Resume.pdf" class="image fit"><img src="images/my_figure.png" alt=""></a>
