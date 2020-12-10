@@ -10,4 +10,4 @@ classes: wide
 date: 2021-01-01
 ---
 
-[xyx](./images/Vishnu_Photo_Resume.pdf.pdf)
+[xyx](/images/Vishnu_Photo_Resume.pdf.pdf)
