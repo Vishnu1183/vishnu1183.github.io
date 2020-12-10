@@ -10,4 +10,4 @@ classes: wide
 date: 2021-01-01
 ---
 
-[xyx](/images/Vishnu_Photo_Resume.pdf)
+[Vishnu's Resume](https://docs.google.com/gview?url=https://vishnu1183.github.io/images/Vishnu_Photo_Resume.pdf&embedded=true "Vishnu's Resume")
